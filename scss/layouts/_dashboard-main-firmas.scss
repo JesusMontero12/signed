@@ -1,0 +1,61 @@
+main{
+    .tabsFirmas{
+        
+        .firmas{
+            display: flex!important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                margin: 3.125rem 0rem;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.875rem;
+            }
+            form{
+                width: 80%;
+                margin-bottom: 10px;
+                span{
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        margin: 5px;
+                        position: absolute;
+                    }
+                }
+                input{
+                    width: 18.75rem;
+                    height: 1.875rem;
+                    padding-left: 30px;
+                }
+            }
+            
+            .TableFirmas{
+                width: 80%;
+                margin-bottom: 80px;
+                border-collapse: collapse;
+                border: 1px solid $bg-8;
+                thead{
+                    th{
+                        font-family: 'Tajawal', sans-serif;
+                        font-size: 1.125rem;
+                        color: $color-text-7;
+                        background-color: $bg-8;
+                        padding: .3125rem;
+                        border: 1px solid $bg-7;
+                    }
+                }
+                tbody{
+                    td{
+                        padding: .3125rem;
+                        font-family: 'Tajawal', sans-serif;
+                        font-size: 1.125rem;
+                        text-align: center;
+                        color: $color-text-7;
+                        background-color: $bg-4;
+                        border: 1px solid $bg-7;
+                    }
+                }
+            }
+        }
+    }
+}

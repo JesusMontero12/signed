@@ -1,0 +1,28 @@
+main{
+    .contenedor{
+        #pestanas{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.125rem;
+            li{
+                list-style-type: none;
+                float: left;
+                text-align: center;
+                margin: 0px 0px -2px 0px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border: 1px solid $bg-5;
+                border-bottom: $bg-2;
+                padding: 15px 0px;
+                a:link{
+                    text-decoration: none;
+                    color: $color-text-8;
+                    padding: 15px 30px;
+                }
+            }
+        }
+        #contenidopestanas{
+            clear: both;  
+            background: $bg-7;
+        }
+    }
+}

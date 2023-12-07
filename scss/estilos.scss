@@ -1,0 +1,27 @@
+/*-----Enlace carpeta utilities-----*/
+/*Variables, mixins, funciones*/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+/*-----Enlaces carpeta Base-----*/
+/*tipografias, reset*/
+@import "./base/reset";
+@import "./base/typograf";
+
+/*-----Enlaces carpeta layout-----*/
+@import "./layouts/index-header";
+@import "./layouts/index-main";
+@import "./layouts/registro-empresa";
+@import "./layouts/login";
+@import "./layouts/dashboard-header";
+@import "./layouts/_dashboard-main-empleados.scss";
+@import "./layouts/_dashboard-main-firmas.scss";
+@import "./layouts/_dashboard-tabs.scss";
+
+/*------Enlaces Responsive Carpeta layout/media-----*/
+/*Media Query de 1024px(laptos)*/
+@import "./layouts/media/media1024";
+/*Media Query de 768px(tablets)*/
+@import "./layouts/media/media768";
+/*Media Query de 425px(Celular)*/
+@import "./layouts/media/media425";

@@ -1,0 +1,602 @@
+/*-----Enlace carpeta utilities-----*/
+/*Variables, mixins, funciones*/
+/*se llama con inlcude el nombre del mixin y los parametros*/
+/*-----Enlaces carpeta Base-----*/
+/*tipografias, reset*/
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&family=Open+Sans:wght@300;400;600&family=Tajawal:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+Fuentes tipograficas:
+    font-family: 'Fuggles', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+*/
+/*-----Enlaces carpeta layout-----*/
+header {
+  position: sticky;
+  top: 0;
+  background-color: #000b45;
+  color: #ffffff;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav .logo h1 {
+  margin: 10px 40px;
+  font-family: "Fuggles";
+  font-size: 2.1875rem;
+  text-align: center;
+  cursor: pointer;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  padding: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+header nav ul a:hover {
+  background-color: #000080;
+}
+
+main .containerPresentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000b45;
+  padding: 1.25rem;
+  height: 90vh;
+  margin: 0;
+}
+main .containerPresentacion img {
+  width: 500px;
+  margin-left: 70px;
+}
+main .containerPresentacion .textSlogan {
+  text-align: center;
+  color: #ffffff;
+}
+main .containerPresentacion .textSlogan h1 {
+  margin: 0.3125rem 50px;
+  text-align: center;
+  font-family: "Tajawal", sans-serif;
+  font-size: 3.75rem;
+}
+main .containerPresentacion .textSlogan h1 span {
+  font-family: "Fuggles", cursive;
+  font-size: 5rem;
+  font-weight: 600;
+}
+main .containerPresentacion .textSlogan p {
+  padding: 0rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.875rem;
+}
+main .containerPlanes {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #000b45;
+}
+main .containerPlanes h6 {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 3.75rem;
+  color: #ffffff;
+}
+main .containerPlanes .containerCards {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+main .containerPlanes .containerCards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3.75rem;
+  width: 50%;
+  border: 0.05rem solid #D9D9D9;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+main .containerPlanes .containerCards .card img {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.625rem;
+}
+main .containerPlanes .containerCards .card h2 {
+  text-align: center;
+  font-family: "Tajawal", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+main .containerPlanes .containerCards .card ul li {
+  margin: 0rem 0rem 0.1875rem 1.875rem;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.125rem;
+}
+main .containerPlanes .containerCards .card hr {
+  width: 80%;
+  margin-top: 0.625rem;
+  border: 1px solid #D9D9D9;
+}
+main .containerPlanes .containerCards .card .footerCard {
+  margin: 1.25rem;
+  padding: 0.625rem;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .containerPlanes .containerCards .card .footerCard .precios {
+  display: flex;
+  flex-direction: column;
+}
+main .containerPlanes .containerCards .card .footerCard .antes {
+  text-decoration: line-through;
+}
+main .containerPlanes .containerCards .card .footerCard .ahora {
+  color: #ffffff;
+  font-weight: 600;
+}
+main .containerPlanes .containerCards .card .footerCard .btnObtener {
+  padding: 0.625rem;
+  margin: 0.625rem 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #212529;
+  background: rgb(238, 217, 144);
+  background: linear-gradient(90deg, rgb(238, 217, 144) 0%, rgb(160, 124, 68) 35%, rgb(214, 181, 101) 100%);
+  border-radius: 0.3125rem;
+}
+main .containerPlanes .containerCards .card .footerCard .btnObtener:hover {
+  background-color: #000b45;
+  color: #ffffff;
+}
+main .containerNosotros {
+  display: flex;
+  justify-content: center;
+}
+main .containerNosotros .bg-vision {
+  background-image: url("./../assets/img/mision.png");
+}
+main .containerNosotros .nosotros {
+  width: 40%;
+  margin: 1.875rem;
+}
+main .containerNosotros .nosotros h3 {
+  text-align: center;
+  font-family: "Tajawal", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+main .containerNosotros .nosotros p {
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.125rem;
+}
+main .containerContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #ffffff;
+  background-color: #212529;
+}
+main .containerContacto form {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 15.625rem 15.625rem;
+  grid-template-rows: 4.375rem 4.375rem;
+  grid-template-areas: "h5  h5" "name email" "comentario comentario";
+}
+main .containerContacto form h5 {
+  text-align: center;
+  font-size: 1.875rem;
+  grid-area: h5;
+}
+main .containerContacto form .inputText1 {
+  grid-area: name;
+  margin: 0.3125rem;
+}
+main .containerContacto form .inputText1 input {
+  padding: 0.625rem;
+  width: 12.5rem;
+  height: 2.5rem;
+}
+main .containerContacto form .inputText2 {
+  grid-area: email;
+  margin: 0.3125rem;
+}
+main .containerContacto form .inputText2 input {
+  padding: 0.625rem;
+  width: 12.5rem;
+  height: 2.5rem;
+}
+main .containerContacto form .inputText3 {
+  grid-area: comentario;
+  margin: 0.3125rem;
+}
+main .containerContacto form .inputText3 textarea {
+  padding: 0.625rem;
+  width: 28.125rem;
+  height: 6.25rem;
+}
+
+.ContainerRegister {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 33, 71);
+  background: linear-gradient(207deg, rgb(0, 33, 71) 0%, rgb(0, 0, 128) 39%, rgb(84, 114, 242) 100%);
+}
+.ContainerRegister .Intro {
+  width: 60%;
+  margin: 0rem 0.3125rem 0rem 6.25rem;
+  color: #ffffff;
+}
+.ContainerRegister .Intro h2 {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  font-family: "Tajawal", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.ContainerRegister .Intro p {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  text-align: center;
+}
+.ContainerRegister .ContainerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 1.25rem;
+}
+.ContainerRegister .ContainerForm .HeaderForm h1 {
+  font-family: "Fuggles";
+  font-size: 3.75rem;
+  color: #ffffff;
+}
+.ContainerRegister .ContainerForm .InputsForm .InputInsert {
+  display: flex;
+  justify-content: center;
+  width: 18.75rem; /*300px*/
+  margin: 0.625rem;
+  padding: 0.625rem 0rem 0.625rem 2.5rem; /*10px 0px 10px 40px*/
+  font-family: Verdana, sans-serif;
+  font-size: 1rem; /*16px*/
+  color: #454545;
+  border-style: none;
+  border: 0.5px solid rgba(0, 0, 0, 0.6);
+  border-radius: 0.3125rem; /*5px*/
+  outline-style: none;
+}
+.ContainerRegister .ContainerForm .InputsForm img {
+  position: absolute;
+  width: 1.25rem; /*20px*/
+  height: 1.25rem; /*20px*/
+  margin: 1.3125rem 0rem 0rem 1.25rem; /*12px 0px 0px 10px*/
+}
+.ContainerRegister .ContainerForm .InputSend {
+  width: 18.75rem; /*300px*/
+  padding: 0.625rem; /*10px*/
+  margin: 0.625rem auto; /*10px auto*/
+  font-family: Verdana, sans-serif;
+  font-size: 1rem; /*16px*/
+  color: #ffffff;
+  background-color: #000b45;
+  border-radius: 0.125rem; /*2px*/
+  border-style: none;
+}
+.ContainerRegister .ContainerForm .InputSend:hover {
+  background-color: #000080;
+}
+.ContainerRegister .ContainerForm .linklogin {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+.ContainerRegister .ContainerForm .linklogin:hover {
+  text-decoration: none;
+}
+
+.ContainerLogin {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 33, 71);
+  background: linear-gradient(207deg, rgb(0, 33, 71) 0%, rgb(0, 0, 128) 39%, rgb(84, 114, 242) 100%);
+}
+.ContainerLogin .Intro {
+  width: 60%;
+  margin: 0rem 0rem 0rem 6.25rem;
+  color: #ffffff;
+}
+.ContainerLogin .Intro h2 {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  font-family: "Tajawal", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.ContainerLogin .Intro p {
+  margin: 0.625rem;
+  padding: 0.625rem;
+  text-align: center;
+}
+.ContainerLogin .ContainerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 1.25rem;
+}
+.ContainerLogin .ContainerForm .HeaderForm h1 {
+  font-family: "Fuggles";
+  font-size: 3.75rem;
+  color: #ffffff;
+}
+.ContainerLogin .ContainerForm .InputsForm .InputInsert {
+  display: flex;
+  justify-content: center;
+  width: 18.75rem; /*300px*/
+  margin: 0.625rem;
+  padding: 0.625rem 0rem 0.625rem 2.5rem; /*10px 0px 10px 40px*/
+  font-family: Verdana, sans-serif;
+  font-size: 1rem; /*16px*/
+  color: #454545;
+  border-style: none;
+  border: 0.5px solid rgba(0, 0, 0, 0.6);
+  border-radius: 0.3125rem; /*5px*/
+}
+.ContainerLogin .ContainerForm .InputsForm img {
+  position: absolute;
+  width: 1.25rem; /*20px*/
+  height: 1.25rem; /*20px*/
+  margin: 1.3125rem 0rem 0rem 1.25rem; /*12px 0px 0px 10px*/
+}
+.ContainerLogin .ContainerForm .InputSend {
+  width: 18.75rem; /*300px*/
+  padding: 0.625rem; /*10px*/
+  margin: 0.625rem auto; /*10px auto*/
+  font-family: Verdana, sans-serif;
+  font-size: 1rem; /*16px*/
+  color: #ffffff;
+  background-color: #000b45;
+  border-radius: 0.125rem; /*2px*/
+  border-style: none;
+}
+.ContainerLogin .ContainerForm .InputSend:hover {
+  background-color: #000080;
+}
+
+.headerDash {
+  background-color: #000b45;
+  color: #ffffff;
+}
+.headerDash .navDash {
+  display: flex;
+  justify-content: space-between;
+}
+.headerDash .navDash .logoDash h1 {
+  margin: 0.3125rem;
+  padding: 0.3125rem;
+  font-family: "Fuggles";
+  font-size: 2.1875rem;
+  text-align: center;
+  cursor: pointer;
+}
+.headerDash .navDash .ulDash {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerDash .navDash .ulDash li {
+  list-style: none;
+}
+.headerDash .navDash .ulDash li a {
+  padding: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+.headerDash .navDash .ulDash a:hover {
+  background-color: #000080;
+}
+
+main .tabsEmpleados {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9D9D9;
+}
+main .tabsEmpleados form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .tabsEmpleados form p {
+  margin: 3.125rem 0rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.875rem;
+}
+main .tabsEmpleados form .InputsGroup {
+  display: flex !important;
+  margin: 0.625rem;
+}
+main .tabsEmpleados form .InputsGroup .InputsForm {
+  width: 18.75rem;
+  height: 2.5rem;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.3125rem;
+  border-style: none;
+}
+main .tabsEmpleados form .FormSelect {
+  margin: 0.625rem;
+  width: 18.75rem;
+  height: 2.5rem;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.3125rem;
+  border-style: none;
+}
+main .tabsEmpleados form .FormSelect option {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+}
+main .tabsEmpleados form .BtnEmpleados {
+  margin: 1.25rem;
+  padding: 0.625rem 1.25rem;
+  color: #ffffff;
+  background-color: #000b45;
+  border-style: none;
+  border-radius: 5px;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1rem;
+}
+main .tabsEmpleados p {
+  margin: 3.125rem 0rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.875rem;
+}
+main .tabsEmpleados .TableEmpleados {
+  width: 80%;
+  margin-bottom: 80px;
+  border-collapse: collapse;
+  border: 1px solid #212529;
+}
+main .tabsEmpleados .TableEmpleados thead th {
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.125rem;
+  color: #ffffff;
+  background-color: #212529;
+  padding: 0.3125rem;
+  border: 1px solid #ffffff;
+}
+main .tabsEmpleados .TableEmpleados tbody td {
+  padding: 0.3125rem;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #454545;
+  border: 1px solid #ffffff;
+}
+main .tabsEmpleados .TableEmpleados tbody td .editar {
+  color: green;
+}
+main .tabsEmpleados .TableEmpleados tbody td .eliminar {
+  color: red;
+}
+
+main .tabsFirmas .firmas {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .tabsFirmas .firmas p {
+  margin: 3.125rem 0rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.875rem;
+}
+main .tabsFirmas .firmas form {
+  width: 80%;
+  margin-bottom: 10px;
+}
+main .tabsFirmas .firmas form span img {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  position: absolute;
+}
+main .tabsFirmas .firmas form input {
+  width: 18.75rem;
+  height: 1.875rem;
+  padding-left: 30px;
+}
+main .tabsFirmas .firmas .TableFirmas {
+  width: 80%;
+  margin-bottom: 80px;
+  border-collapse: collapse;
+  border: 1px solid #212529;
+}
+main .tabsFirmas .firmas .TableFirmas thead th {
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.125rem;
+  color: #ffffff;
+  background-color: #212529;
+  padding: 0.3125rem;
+  border: 1px solid #ffffff;
+}
+main .tabsFirmas .firmas .TableFirmas tbody td {
+  padding: 0.3125rem;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #454545;
+  border: 1px solid #ffffff;
+}
+
+main .contenedor #pestanas {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+}
+main .contenedor #pestanas li {
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  margin: 0px 0px -2px 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #D9D9D9;
+  border-bottom: #000080;
+  padding: 15px 0px;
+}
+main .contenedor #pestanas li a:link {
+  text-decoration: none;
+  color: #212529;
+  padding: 15px 30px;
+}
+main .contenedor #contenidopestanas {
+  clear: both;
+  background: #ffffff;
+}
+
+/*------Enlaces Responsive Carpeta layout/media-----*/
+/*Media Query de 1024px(laptos)*/
+/*Media Query de 768px(tablets)*/
+/*Media Query de 425px(Celular)*/
+
+/*# sourceMappingURL=estilos.css.map */

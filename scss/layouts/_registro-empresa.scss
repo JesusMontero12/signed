@@ -1,0 +1,83 @@
+.ContainerRegister{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0,33,71);
+    background: linear-gradient(207deg, rgba(0,33,71,1) 0%, rgba(0,0,128,1) 39%, rgba(84,114,242,1) 100%);
+    .Intro{
+        width: 60%;
+        margin: 0rem .3125rem 0rem 6.25rem;
+        color: $color-text-7;
+        h2{
+            margin: .625rem;
+            padding: .625rem;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 2.5rem ;
+            text-align: center;
+        }
+        p{
+            margin: .625rem;
+            padding: .625rem;
+            text-align: center;
+        }
+    }
+    .ContainerForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 1.25rem;
+        .HeaderForm{
+            h1{
+                font-family: 'Fuggles';
+                font-size: 3.75rem;
+                color: $color-text-7;
+            }
+        }
+        .InputsForm{
+            .InputInsert{
+                display: flex;
+                justify-content: center;
+                width: 18.75rem;/*300px*/
+                margin: .625rem;
+                padding: .625rem 0rem .625rem 2.5rem;/*10px 0px 10px 40px*/
+                font-family: Verdana, sans-serif;
+                font-size: 1rem;/*16px*/
+                color: $color-text-4;
+                border-style: none;
+                border: 0.5px solid rgba(0, 0, 0, 0.6);
+                border-radius: .3125rem;/*5px*/
+                outline-style: none;
+            }
+            img{
+                position: absolute;
+                width: 1.25rem;/*20px*/
+                height: 1.25rem;/*20px*/
+                margin: 1.3125rem 0rem 0rem 1.25rem;/*12px 0px 0px 10px*/
+            }
+        }
+        .InputSend{
+            width: 18.75rem;/*300px*/
+            padding: .625rem;/*10px*/
+            margin: .625rem auto;/*10px auto*/
+            font-family: Verdana, sans-serif;
+            font-size: 1rem;/*16px*/
+            color: $color-text-7;
+            background-color: $bg-1;
+            border-radius: .125rem;/*2px*/
+            border-style: none;
+        }
+        .InputSend:hover{
+            background-color: $bg-2;
+        }
+        .linklogin{
+            color: $color-text-7;            
+            font-family: 'Open Sans', sans-serif;
+        }
+        .linklogin:hover{
+            text-decoration: none;
+        }
+    }
+}

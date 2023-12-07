@@ -1,0 +1,197 @@
+main{
+     //CONTENEDOR PRESENTACION BIENVENIDA TEXTO Y SLOGAN
+    .containerPresentacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $bg-1;	
+        padding: 1.25rem;
+        height: 90vh;
+        margin: 0;
+        img{
+            width: 500px;
+            margin-left: 70px;
+        }
+        .textSlogan{
+            text-align: center;
+            color: $color-text-7;
+            h1{
+                margin: .3125rem 50px;
+                text-align: center;
+                font-family: 'Tajawal', sans-serif;
+                font-size: 3.75rem;
+                span{
+                    font-family: 'Fuggles', cursive;
+                    font-size: 5rem;
+                    font-weight: 600;
+                }
+            }
+            p{
+                padding: 0rem;
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.875rem;
+            }
+        }
+    }
+    //CONTENEDOR PLANES CARD CON PLANES: BÁSICO PROFESIONAL Y PREMIUM
+    .containerPlanes{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: $bg-1;
+        h6{
+            margin-top: 2.5rem;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 3.75rem;
+            color: $color-text-7;
+            
+        }
+        .containerCards{
+            padding: 1.25rem;
+            display: flex;
+            justify-content: center;
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 3.75rem;
+                width: 50%;
+                border: .05rem solid $bg-5;
+                border-radius: .5rem;
+                color: $color-text-7;
+                img{
+                    width: 5rem;
+                    height: 5rem;
+                    margin: .625rem;
+                }
+                h2{
+                    text-align: center;
+                    font-family: 'Tajawal', sans-serif;
+                    font-size: 2.5rem;
+                    margin-bottom: 1.25rem;
+                }
+                ul{
+                    li{
+                        margin: 0rem 0rem .1875rem 1.875rem;
+                        font-family: 'Tajawal', sans-serif;
+                        font-size: 1.125rem;
+                    }
+                }
+                hr{
+                    width: 80%;
+                    margin-top: .625rem;
+                    border: 1px solid $bg-5;
+                }
+                .footerCard{                    
+                    margin: 1.25rem;
+                    padding: .625rem;
+                    font-family: 'Tajawal', sans-serif;
+                    font-size: 1.125rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .precios{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .antes{
+                        text-decoration: line-through;
+                    }
+                    .ahora{
+                        color: $color-text-7;
+                        font-weight: 600;
+                    }
+                    .btnObtener{
+                        padding: .625rem;
+                        margin: .625rem 1.25rem;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 1.25rem; 
+                        font-weight: 400;
+                        text-decoration: none;
+                        color: $color-text-8;
+                        background: rgb(238,217,144);
+                        background: linear-gradient(90deg, rgba(238,217,144,1) 0%, rgba(160,124,68,1) 35%, rgba(214,181,101,1) 100%);
+                        border-radius: .3125rem;
+                       
+                    }
+                    .btnObtener:hover{
+                        background-color: $bg-1;
+                        color: $color-text-7;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+    //CONTENEDOR NOSOTROS MISION Y VISION
+    .containerNosotros{
+        display: flex;
+        justify-content: center;
+        .bg-vision{
+            background-image: url('./../assets/img/mision.png');
+        }
+        .nosotros{
+            width: 40%;
+            margin: 1.875rem;                
+            h3{
+                text-align: center;
+                font-family: 'Tajawal', sans-serif;
+                font-size: 2.5rem;
+                margin-bottom: 1.25rem;
+            }
+            p{
+                font-family: 'Tajawal', sans-serif;
+                        font-size: 1.125rem;
+            }
+        }
+    }
+    //CONTENEDOR CONTACTO FORMULARIO DE CORREO
+    .containerContacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: $color-text-7;
+        background-color: $bg-8;
+        form{
+            margin: auto;
+            @include grid(15.625rem 15.625rem , 4.375rem 4.375rem, "h5  h5""name email""comentario comentario");
+            h5{
+                text-align: center;
+                font-size: 1.875rem;
+                grid-area: h5;
+            }
+            .inputText1{
+                grid-area: name;
+                margin: .3125rem;
+                input{
+                    padding: .625rem;
+                    width: 12.5rem;
+                    height: 2.5rem;
+                }
+            }
+            .inputText2{
+                grid-area: email;
+                margin: .3125rem;
+                input{
+                    padding: .625rem;
+                    width: 12.5rem;
+                    height: 2.5rem;
+                }
+            }
+            .inputText3{
+                grid-area: comentario;
+                margin: .3125rem;
+                textarea{
+                    padding: .625rem;
+                    width: 28.125rem;
+                    height: 6.25rem;
+                }
+            }
+        }
+    }
+}
