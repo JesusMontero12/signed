@@ -1,0 +1,90 @@
+footer{
+    .containerContacto{
+        display: flex;
+        align-items: center;
+        padding: 2.5rem;
+        justify-content: center;
+        color: $color-text-7;
+        background-color: $bg-8;
+        .NavFooter{
+            margin: 2.5rem;
+            padding: .625rem;
+            width: 30%;
+            h6{
+                margin: .625rem 0rem 1.25rem 0rem;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.25rem;
+            }
+            ul{
+                li{
+                    margin: .125rem;
+                    padding: .125rem;
+                    list-style: none;
+                    a{
+                        color: $color-text-7;
+                        text-decoration: none;
+                        font-family: 'Tajawal', sans-serif;
+                        font-size: .9375rem;
+                    }
+                    a:hover{
+                        color: $color-text-5;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        form{
+            h5{
+                margin: .625rem 0rem 1.25rem 0rem;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 2.5rem;
+            }
+            .textmailfooter{
+                display: flex;
+                .inputText1{
+                    input{
+                        width: 18.75rem;
+                        height: 1.875rem;
+                        margin: .625rem;
+                        padding-left: .3125rem;
+                        font-family: 'Open Sans', sans-serif;
+                        border-style: none;
+                        border-radius: .125rem;
+                    }
+                }
+                .inputText2{
+                    input{
+                        width: 18.75rem;
+                        height: 1.875rem;
+                        margin: .625rem;
+                        padding-left: .3125rem;
+                        font-family: 'Open Sans', sans-serif;
+                        border-style: none;
+                        border-radius: .125rem;
+                    }
+                }
+            }
+            .inputText3{
+               textarea{
+                width: 18.75rem;
+                height: 6.25rem;
+                margin: .625rem;
+                padding-left: .3125rem;
+                font-family: 'Open Sans', sans-serif;
+                border-style: none;
+                border-radius: .125rem;
+               }
+            }
+        }
+    }
+    .copyright{
+        padding: 1.875rem;
+        color: $color-text-7;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        a{
+            color: $color-text-7;
+        }
+    }
+}

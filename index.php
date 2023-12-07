@@ -103,56 +103,72 @@
         </section>
         <!-- SECTION NOSOTROS -->
         <section class="containerNosotros">
-            <div class="nosotros bg-vision">
-                <h3>Visión</h3>
-                <p>"En nuestra visión, aspiramos a ser la plataforma líder en soluciones de nómina, 
-                    transformando la experiencia de gestión salarial para empresas y empleados por igual. 
-                    Nos visualizamos como la herramienta integral que simplifica y optimiza cada aspecto 
-                    del proceso de nómina, ofreciendo precisión, eficiencia y transparencia.
-                    <br><br>
-                    Nuestra página web se concibe como un espacio donde la complejidad de la gestión salarial 
-                    se reduce a pasos simples e intuitivos. Nos esforzamos por ser la referencia en el mercado, 
-                    proporcionando a empleadores y colaboradores la confianza de que sus transacciones salariales 
-                    se llevan a cabo con exactitud y rapidez."</p>
+            <div class="bg-mision">
+                <div class="nosotros">
+                    <h3>Misión</h3>
+                    <p>"En nuestra misión, nos comprometemos a ser la plataforma de gestión de nómina que impulsa el éxito 
+                        empresarial a través de la simplificación, eficiencia y confiabilidad en cada transacción salarial. 
+                        Nos esforzamos por brindar a empresas de todos los tamaños la herramienta esencial que optimiza sus 
+                        procesos de nómina, permitiéndoles centrarse en lo que más importa: su capital humano.
+                        <br><br>
+                        Nuestro propósito es proporcionar a empleadores y empleados una experiencia sin complicaciones, 
+                        donde la administración de la nómina se convierte en un proceso fluido y transparente. Nos comprometemos 
+                        a ofrecer soluciones flexibles y personalizadas que se adapten a las necesidades específicas de cada empresa, 
+                        independientemente de su estructura o sector."</p>
+                </div>
             </div>
-            <div class="nosotros bg-mision">
-                <h3>Misión</h3>
-                <p>"En nuestra misión, nos comprometemos a ser la plataforma de gestión de nómina que impulsa el éxito 
-                    empresarial a través de la simplificación, eficiencia y confiabilidad en cada transacción salarial. 
-                    Nos esforzamos por brindar a empresas de todos los tamaños la herramienta esencial que optimiza sus 
-                    procesos de nómina, permitiéndoles centrarse en lo que más importa: su capital humano.
-                    <br><br>
-                    Nuestro propósito es proporcionar a empleadores y empleados una experiencia sin complicaciones, 
-                    donde la administración de la nómina se convierte en un proceso fluido y transparente. Nos comprometemos 
-                    a ofrecer soluciones flexibles y personalizadas que se adapten a las necesidades específicas de cada empresa, 
-                    independientemente de su estructura o sector."</p>
-            </div>
-        </section>
-        
-        
+            <div class="bg-vision">
+                <div class="nosotros">
+                    <h3>Visión</h3>
+                    <p>"En nuestra visión, aspiramos a ser la plataforma líder en soluciones de nómina, 
+                        transformando la experiencia de gestión salarial para empresas y empleados por igual. 
+                        Nos visualizamos como la herramienta integral que simplifica y optimiza cada aspecto 
+                        del proceso de nómina, ofreciendo precisión, eficiencia y transparencia.
+                        <br><br>
+                        Nuestra página web se concibe como un espacio donde la complejidad de la gestión salarial 
+                        se reduce a pasos simples e intuitivos. Nos esforzamos por ser la referencia en el mercado, 
+                        proporcionando a empleadores y colaboradores la confianza de que sus transacciones salariales 
+                        se llevan a cabo con exactitud y rapidez."</p>
+                </div>
+            </div>     
+        </section>   
     </main>
 
     <footer>
         <!-- SECTION CONTACTO -->
         <section class="containerContacto">
+            <div class="NavFooter">
+                <h6>Información y contacto.</h6>
+                <ul>
+                    <li><a href="">Tarifas</a></li>
+                    <li><a href="">Sobre osotros</a></li>
+                    <li><a href="">Preguntas Frecuentes</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
             <form action="" method="POST">
-                <h5>Contactanos a traves de</h5>
+                <h5>Contáctanos a través de</h5>
                 <!-- CAJA INPUTS ESTILOS GENERALES -->
-                <div class="inputText1">
-                    <label for="nombre"></label>
-                    <input type="text" name="name" id="nombre" placeholder="Nombre">                    
-                </div>
-                <!-- CAJA INPUTS ESTILOS GENERALES -->
-                <div class="inputText2">
-                    <label for="correo"></label>
-                    <input type="email" name="email" id="correo" placeholder="Correo">                    
+                <div class="textmailfooter">
+                    <div class="inputText1">
+                        <input type="text" autocomplete="off" name="name" id="nombre" placeholder="Nombre">                    
+                    </div>
+                    <!-- CAJA INPUTS ESTILOS GENERALES -->
+                    <div class="inputText2">
+                        <input type="email" autocomplete="off" name="email" id="correo" placeholder="Correo">                    
+                    </div>
                 </div>
                 <div class="inputText3">
-                    <label for="comentario"></label>
-                    <textarea name="comentario" id="comentario" placeholder="Comenterio" cols="30" rows="10"></textarea>                    
+                    <textarea name="comentario" autocomplete="off" id="comentario" placeholder="Comenterio" cols="30" rows="10"></textarea>                    
                 </div>
             </form>
         </section>
+        <!-- Copyright -->
+        <div class="copyright">
+                © 2023 Copyright:
+                <a class="text-body" href="#">MontCorp.</a>
+            </div>
+            <!-- Copyright -->
     </footer>
 </body>
 </html>

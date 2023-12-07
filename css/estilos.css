@@ -176,70 +176,122 @@ main .containerPlanes .containerCards .card .footerCard .btnObtener:hover {
 main .containerNosotros {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+main .containerNosotros .bg-mision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  padding: 0;
+  background-image: url("../assets/img/mision.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main .containerNosotros .bg-vision {
-  background-image: url("./../assets/img/mision.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  padding: 0;
+  background-image: url("../assets/img/vision.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main .containerNosotros .nosotros {
-  width: 40%;
-  margin: 1.875rem;
+  text-align: center;
+  width: 500px;
+  margin-top: 10px;
 }
 main .containerNosotros .nosotros h3 {
   text-align: center;
   font-family: "Tajawal", sans-serif;
   font-size: 2.5rem;
-  margin-bottom: 1.25rem;
 }
 main .containerNosotros .nosotros p {
   font-family: "Tajawal", sans-serif;
   font-size: 1.125rem;
 }
-main .containerContacto {
+
+footer .containerContacto {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  padding: 2.5rem;
+  justify-content: center;
   color: #ffffff;
   background-color: #212529;
 }
-main .containerContacto form {
-  margin: auto;
-  display: grid;
-  grid-template-columns: 15.625rem 15.625rem;
-  grid-template-rows: 4.375rem 4.375rem;
-  grid-template-areas: "h5  h5" "name email" "comentario comentario";
-}
-main .containerContacto form h5 {
-  text-align: center;
-  font-size: 1.875rem;
-  grid-area: h5;
-}
-main .containerContacto form .inputText1 {
-  grid-area: name;
-  margin: 0.3125rem;
-}
-main .containerContacto form .inputText1 input {
+footer .containerContacto .NavFooter {
+  margin: 2.5rem;
   padding: 0.625rem;
-  width: 12.5rem;
-  height: 2.5rem;
+  width: 30%;
 }
-main .containerContacto form .inputText2 {
-  grid-area: email;
-  margin: 0.3125rem;
+footer .containerContacto .NavFooter h6 {
+  margin: 0.625rem 0rem 1.25rem 0rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
 }
-main .containerContacto form .inputText2 input {
-  padding: 0.625rem;
-  width: 12.5rem;
-  height: 2.5rem;
+footer .containerContacto .NavFooter ul li {
+  margin: 0.125rem;
+  padding: 0.125rem;
+  list-style: none;
 }
-main .containerContacto form .inputText3 {
-  grid-area: comentario;
-  margin: 0.3125rem;
+footer .containerContacto .NavFooter ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Tajawal", sans-serif;
+  font-size: 0.9375rem;
 }
-main .containerContacto form .inputText3 textarea {
-  padding: 0.625rem;
-  width: 28.125rem;
+footer .containerContacto .NavFooter ul li a:hover {
+  color: #D9D9D9;
+  cursor: pointer;
+}
+footer .containerContacto form h5 {
+  margin: 0.625rem 0rem 1.25rem 0rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+}
+footer .containerContacto form .textmailfooter {
+  display: flex;
+}
+footer .containerContacto form .textmailfooter .inputText1 input {
+  width: 18.75rem;
+  height: 1.875rem;
+  margin: 0.625rem;
+  padding-left: 0.3125rem;
+  font-family: "Open Sans", sans-serif;
+  border-style: none;
+  border-radius: 0.125rem;
+}
+footer .containerContacto form .textmailfooter .inputText2 input {
+  width: 18.75rem;
+  height: 1.875rem;
+  margin: 0.625rem;
+  padding-left: 0.3125rem;
+  font-family: "Open Sans", sans-serif;
+  border-style: none;
+  border-radius: 0.125rem;
+}
+footer .containerContacto form .inputText3 textarea {
+  width: 18.75rem;
   height: 6.25rem;
+  margin: 0.625rem;
+  padding-left: 0.3125rem;
+  font-family: "Open Sans", sans-serif;
+  border-style: none;
+  border-radius: 0.125rem;
+}
+footer .copyright {
+  padding: 1.875rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+footer .copyright a {
+  color: #ffffff;
 }
 
 .ContainerRegister {
